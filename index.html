@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">ShoeStore</div>
+        <div class="cart">
+            <button id="cartButton">Cart (0)</button>
+        </div>
+    </header>
+
+    <!-- Product List -->
+    <section class="product-list">
+        <div class="product-card" data-id="1">
+            <img src="shoe1.jpg" alt="Shoe 1">
+            <h3>Sporty Shoe</h3>
+            <p>$50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="2">
+            <img src="shoe2.jpeg" alt="Shoe 2">
+            <h3>Casual Shoe</h3>
+            <p>$70</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="3">
+            <img src="shoe3.jpeg" alt="Shoe 3">
+            <h3>Running Shoe</h3>
+            <p>$80</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <button id="closeCart" class="close">&times;</button> <!-- Close Button -->
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <div class="total">
+                <span>Total: </span><span id="totalPrice">$0</span>
+            </div>
+            <button id="checkoutButton">Checkout</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
